@@ -1,5 +1,3 @@
-@import 'react-image-gallery/styles/css/image-gallery.css';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,4 +5,21 @@
 @font-face {
   font-family: 'Archivo';
   src: url('./fonts/RacingSansOne-Regular.ttf');
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  background-color: black !important;
+}
+
+.carousel-slider {
+  overflow: visible !important;
+}
+
+.control-dots {
+  bottom: -3rem !important;
 }
