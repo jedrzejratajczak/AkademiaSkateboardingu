@@ -8,7 +8,7 @@ import Media from './components/Media';
 
 const App = () => {
   return (
-    <div className="font-archivo w-full min-h-screen bg-[#f9f9f9] grid grid-rows-[min-content_1fr_min-content]">
+    <div className="font-cormorant w-full min-h-screen bg-[#f9f9f9] grid grid-rows-[min-content_1fr_min-content]">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

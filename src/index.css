@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Archivo';
-  src: url('./fonts/RacingSansOne-Regular.ttf');
+  font-family: 'Cormorant Unicase';
+  src: url('./fonts/CormorantUnicase-SemiBold.ttf');
 }
 
 .slide {

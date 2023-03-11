@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        archivo: ['Archivo', 'cursive']
+        cormorant: ['Cormorant Unicase', 'cursive']
       },
       colors: {
         accent: '#FBE000'
