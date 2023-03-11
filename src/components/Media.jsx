@@ -38,7 +38,6 @@ const Media = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <p className="text-3xl md:text-4xl text-center my-5">NAJNOWSZE SZOTY</p>
       <div className="pb-16">
         <Carousel
           width={isMd ? 500 : 300}
