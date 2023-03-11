@@ -60,10 +60,7 @@ const Media = () => {
         videoId="cTQLZD5FYHs"
         opts={{
           height: '390',
-          width: '640',
-          playerVars: {
-            autoplay: 1
-          }
+          width: '640'
         }}
       />
     </div>
