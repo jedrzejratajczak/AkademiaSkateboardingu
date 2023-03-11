@@ -42,7 +42,7 @@ const Media = () => {
           showThumbs={false}
           infiniteLoop
           autoPlay
-          statusFormatter={(currentItem, total) => `${currentItem} z ${total}`}
+          statusFormatter={() => null}
         >
           {images.map(image => (
             <div key={image}>
