@@ -6,7 +6,7 @@ const Map = () => (
     <img
       src={Locations}
       alt="Miejsca do jazdy na deskorolce zaznaczone na mapie"
-      className="w-[700px] mx-auto"
+      className="w-[700px] mx-auto my-5"
     />
   </div>
 );
