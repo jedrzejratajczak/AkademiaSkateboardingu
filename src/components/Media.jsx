@@ -1,4 +1,5 @@
 import { Carousel } from 'react-responsive-carousel';
+import { useMediaQuery } from '@react-hook/media-query';
 import YouTube from 'react-youtube';
 import Img1 from '../assets/gallery/1.jpg';
 import Img2 from '../assets/gallery/2.jpg';
@@ -16,6 +17,8 @@ import Img13 from '../assets/gallery/13.jpg';
 import Img14 from '../assets/gallery/14.jpg';
 
 const Media = () => {
+  const isMd = useMediaQuery('only screen and (min-width: 768px)');
+
   const images = [
     Img1,
     Img2,
@@ -35,10 +38,10 @@ const Media = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <p className="text-4xl text-center my-5">NAJNOWSZE SZOTY</p>
+      <p className="text-3xl md:text-4xl text-center my-5">NAJNOWSZE SZOTY</p>
       <div className="pb-16">
         <Carousel
-          width={500}
+          width={isMd ? 500 : 300}
           showThumbs={false}
           infiniteLoop
           autoPlay
@@ -59,8 +62,8 @@ const Media = () => {
         className="my-5"
         videoId="cTQLZD5FYHs"
         opts={{
-          height: '390',
-          width: '640'
+          height: isMd ? '390' : '100%',
+          width: isMd ? '640' : '300'
         }}
       />
     </div>

@@ -8,10 +8,10 @@ const Navbar = () => (
       <img
         src={LogoBlack}
         alt="Logo firmy, litera A i S"
-        className="w-16 h-16 p-1"
+        className="w-12 h-12 md:w-16 md:h-16 p-1"
       />
     </Link>
-    <div className="flex gap-16 items-center justify-center">
+    <div className="hidden md:flex gap-16 items-center justify-center">
       <NavLink to="/">HOME</NavLink>
       <NavLink to="/contact">KONTAKT</NavLink>
       <NavLink to="/media">O NAS</NavLink>
