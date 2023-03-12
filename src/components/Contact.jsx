@@ -7,7 +7,7 @@ const Contact = () => (
     <div className="bg-white shadow p-8 md:p-16 rounded">
       <p className="text-xl md:text-3xl mb-5">E-MAIL</p>
       <p className="text-base md:text-xl text-gray-600">
-        kontakt@skateakademia.pl
+        akademiaskateboardingu@gmail.com
       </p>
     </div>
   </div>
