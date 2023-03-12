@@ -18,7 +18,7 @@ const NavLink = ({ to, children, white = false, onClick }) => {
     </Link>
   ) : (
     <Link
-      className={`text-xl tracking-wide
+      className={`text-[18px] tracking-wide
       ${
         match
           ? 'text-black underline'

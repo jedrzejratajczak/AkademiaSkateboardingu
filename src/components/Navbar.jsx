@@ -17,14 +17,15 @@ const Navbar = () => {
           <img
             src={LogoBlack}
             alt="Logo firmy, litera A i S"
-            className="w-12 h-12 md:w-16 md:h-16 p-1"
+            className="w-16 h-16 p-2"
           />
         </Link>
         <div className="hidden md:flex gap-16 items-center justify-center">
           <NavLink to="/">HOME</NavLink>
-          <NavLink to="/contact">KONTAKT</NavLink>
+          <NavLink to="/kontakt">KONTAKT</NavLink>
+          <NavLink to="/cennik">CENNIK</NavLink>
           <NavLink to="/media">O NAS</NavLink>
-          <NavLink to="/map">MAPA</NavLink>
+          <NavLink to="/mapa">MAPA</NavLink>
         </div>
         <div />
         <div className="relaive md:hidden z-50">
@@ -57,13 +58,16 @@ const Navbar = () => {
           <NavLink onClick={toggleMobileMenu} white to="/">
             HOME
           </NavLink>
-          <NavLink onClick={toggleMobileMenu} white to="/contact">
+          <NavLink onClick={toggleMobileMenu} white to="/kontakt">
             KONTAKT
+          </NavLink>
+          <NavLink onClick={toggleMobileMenu} white to="/cennik">
+            CENNIK
           </NavLink>
           <NavLink onClick={toggleMobileMenu} white to="/media">
             O NAS
           </NavLink>
-          <NavLink onClick={toggleMobileMenu} white to="/map">
+          <NavLink onClick={toggleMobileMenu} white to="/mapa">
             MAPA
           </NavLink>
         </div>

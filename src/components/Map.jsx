@@ -2,8 +2,8 @@ import Locations from '../assets/map.png';
 
 const Map = () => (
   <div>
-    <p className="text-3xl md:text-4xl text-center my-5">
-      MIEJSCA DO JAZDY NA DESKOROLCE
+    <p className="text-3xl md:text-4xl text-center my-5 uppercase">
+      Miejsca prowadzenia zajęć we Wrocławiu
     </p>
     <img
       src={Locations}

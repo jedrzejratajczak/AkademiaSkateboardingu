@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Contact from './components/Contact';
 import Map from './components/Map';
 import Media from './components/Media';
+import Costs from './components/Costs';
 
 const App = () => {
   return (
@@ -12,9 +13,10 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/kontakt" element={<Contact />} />
+        <Route path="/cennik" element={<Costs />} />
         <Route path="/media" element={<Media />} />
-        <Route path="/map" element={<Map />} />
+        <Route path="/mapa" element={<Map />} />
       </Routes>
       <Footer />
     </div>
