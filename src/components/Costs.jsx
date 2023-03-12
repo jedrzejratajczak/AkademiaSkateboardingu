@@ -13,7 +13,7 @@ const Costs = () => (
         <p className="underline">500 ZŁ / MSC</p>
         <p className="text-4xl mt-5">ZAJĘCIA INDYWIDUALNE</p>
         <p className="underline">* 100 ZŁ / H</p>
-        <p className="underline">* 150 ZŁ / H</p>
+        <p className="underline">* 150 ZŁ / 2H</p>
       </div>
       <img
         className="h-[600px] w-screen object-cover"
