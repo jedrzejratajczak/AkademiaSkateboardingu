@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { SocialIcon } from 'react-social-icons';
 import LogoBlack from '../assets/logo-black.png';
 import NavLink from './NavLink';
 
@@ -27,7 +28,17 @@ const Navbar = () => {
           <NavLink to="/media">O NAS</NavLink>
           <NavLink to="/mapa">MAPA</NavLink>
         </div>
-        <div />
+        <div className="block md:hidden" />
+        <div className="hidden md:flex gap-3">
+          <SocialIcon
+            className=" scale-75"
+            url="https://www.facebook.com/SkateAcademy.Wro/"
+          />
+          <SocialIcon
+            className=" scale-75"
+            url="https://www.instagram.com/akademiaskateboardingu"
+          />
+        </div>
         <div className="relaive md:hidden z-50">
           <button className="p-2" onClick={toggleMobileMenu}>
             <div
@@ -70,6 +81,16 @@ const Navbar = () => {
           <NavLink onClick={toggleMobileMenu} white to="/mapa">
             MAPA
           </NavLink>
+          <div className="relative z-10 flex gap-3">
+            <SocialIcon
+              className=" scale-75"
+              url="https://www.facebook.com/SkateAcademy.Wro/"
+            />
+            <SocialIcon
+              className=" scale-75"
+              url="https://www.instagram.com/akademiaskateboardingu"
+            />
+          </div>
         </div>
       </div>
     </>
