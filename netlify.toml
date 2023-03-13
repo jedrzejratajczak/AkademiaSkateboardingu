@@ -4,3 +4,9 @@
   to = "https://akademiaskateboardingu.pl"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://dancing-froyo-48645b.netlify.app"
+  to = "https://akademiaskateboardingu.pl"
+  status = 301
+  force = true
