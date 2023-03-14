@@ -4,7 +4,8 @@ import Home from './components/Home';
 import { Route, Routes } from 'react-router-dom';
 import Contact from './components/Contact';
 import Map from './components/Map';
-import Media from './components/Media';
+import About from './components/About';
+import Gallery from './components/Gallery';
 import Costs from './components/Costs';
 
 const App = () => {
@@ -15,7 +16,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/kontakt" element={<Contact />} />
         <Route path="/cennik" element={<Costs />} />
-        <Route path="/media" element={<Media />} />
+        <Route path="/o_nas" element={<About />} />
+        <Route path="/galeria" element={<Gallery />} />
         <Route path="/mapa" element={<Map />} />
       </Routes>
       <Footer />

@@ -21,25 +21,27 @@ const Navbar = () => {
             className="w-16 h-16 p-2"
           />
         </Link>
-        <div className="hidden md:flex gap-16 items-center justify-center">
+        <div className="hidden lg:flex gap-16 items-center justify-center">
           <NavLink to="/">HOME</NavLink>
           <NavLink to="/kontakt">KONTAKT</NavLink>
           <NavLink to="/cennik">CENNIK</NavLink>
-          <NavLink to="/media">O NAS</NavLink>
+          <NavLink to="/o_nas">O NAS</NavLink>
+          <NavLink to="/galeria">GALERIA</NavLink>
           <NavLink to="/mapa">MAPA</NavLink>
         </div>
-        <div className="block md:hidden" />
-        <div className="hidden md:flex gap-3">
+        <div className="block lg:hidden" />
+        <div className="hidden lg:flex gap-3">
           <SocialIcon
-            className=" scale-75"
+            className="scale-75"
             url="https://www.facebook.com/SkateAcademy.Wro/"
           />
           <SocialIcon
-            className=" scale-75"
+            bgColor="#E8424E"
+            className="scale-75"
             url="https://www.instagram.com/akademiaskateboardingu"
           />
         </div>
-        <div className="relaive md:hidden z-50">
+        <div className="relaive lg:hidden z-50">
           <button className="p-2" onClick={toggleMobileMenu}>
             <div
               className={`transition-colors w-8 h-1 ${
@@ -60,7 +62,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`fixed md:hidden transition-transform z-40 w-screen h-screen ${
+        className={`fixed lg:hidden transition-transform z-40 w-screen h-screen ${
           isMobileMenuOpen ? '' : 'translate-x-full'
         }`}
       >
@@ -75,19 +77,23 @@ const Navbar = () => {
           <NavLink onClick={toggleMobileMenu} white to="/cennik">
             CENNIK
           </NavLink>
-          <NavLink onClick={toggleMobileMenu} white to="/media">
+          <NavLink onClick={toggleMobileMenu} white to="/o_nas">
             O NAS
+          </NavLink>
+          <NavLink onClick={toggleMobileMenu} white to="/galeria">
+            GALERIA
           </NavLink>
           <NavLink onClick={toggleMobileMenu} white to="/mapa">
             MAPA
           </NavLink>
           <div className="relative z-10 flex gap-3">
             <SocialIcon
-              className=" scale-75"
+              className="scale-75"
               url="https://www.facebook.com/SkateAcademy.Wro/"
             />
             <SocialIcon
-              className=" scale-75"
+              bgColor="#E8424E"
+              className="scale-75"
               url="https://www.instagram.com/akademiaskateboardingu"
             />
           </div>

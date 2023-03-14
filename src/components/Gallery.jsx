@@ -16,7 +16,7 @@ import Img12 from '../assets/gallery/12.jpg';
 import Img13 from '../assets/gallery/13.jpg';
 import Img14 from '../assets/gallery/14.jpg';
 
-const Media = () => {
+const Gallery = () => {
   const isMd = useMediaQuery('only screen and (min-width: 768px)');
 
   const images = [
@@ -69,4 +69,4 @@ const Media = () => {
   );
 };
 
-export default Media;
+export default Gallery;
