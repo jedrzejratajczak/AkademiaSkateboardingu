@@ -3,9 +3,20 @@ import AboutPhoto from '../assets/about-photo.jpg';
 
 const About = () => {
   return (
-    <div className="p-10 gap-10 grid grid-cols-[max-content_1fr]">
-      <img className="w-[400px]" src={AboutPhoto} alt="Adam, instruktor" />
-      <div className="text-xl flex flex-col gap-5 uppercase">
+    <div className="p-10 gap-10 flex flex-col md:flex-row items-center">
+      <div className="overflow-hidden md:hidden">
+        <img
+          className="object-cover h-96 -mb-32 md:h-auto md:mb-0 md:w-[300px] lg:w-[400px]"
+          src={AboutPhoto}
+          alt="Adam, instruktor"
+        />
+      </div>
+      <img
+        className="hidden md:block object-cover h-96 -mb-32 md:h-auto md:mb-0 md:w-[300px] lg:w-[400px]"
+        src={AboutPhoto}
+        alt="Adam, instruktor"
+      />
+      <div className="text-sm md:text-base lg:text-xl flex flex-col gap-5 uppercase">
         <p>
           Cześć, nazywam się Adam Szulc i od 13 lat jeżdżę na deskorolce, która
           z czasem z prostej zajawki zmieniła się w nieodłączną część mojego

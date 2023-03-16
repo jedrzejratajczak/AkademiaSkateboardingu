@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`fixed lg:hidden transition-transform z-40 w-screen h-screen ${
+        className={`fixed lg:hidden transition-transform z-40 inset-0 ${
           isMobileMenuOpen ? '' : 'translate-x-full'
         }`}
       >
