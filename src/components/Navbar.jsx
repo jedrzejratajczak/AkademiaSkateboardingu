@@ -26,7 +26,6 @@ const Navbar = () => {
           <NavLink to="/zapisy">ZAPISY</NavLink>
           <NavLink to="/cennik">CENNIK</NavLink>
           <NavLink to="/o_nas">O NAS</NavLink>
-          <NavLink to="/mapa">MAPA</NavLink>
         </div>
         <div className="block lg:hidden" />
         <div className="hidden lg:flex gap-3">
@@ -83,9 +82,6 @@ const Navbar = () => {
           <NavLink onClick={toggleMobileMenu} white to="/o_nas">
             O NAS
           </NavLink>
-          <NavLink onClick={toggleMobileMenu} white to="/mapa">
-            MAPA
-          </NavLink>
           <div className="relative z-10 flex gap-3">
             <SocialIcon
               className="scale-75"
@@ -95,6 +91,11 @@ const Navbar = () => {
               bgColor="#E8424E"
               className="scale-75"
               url="https://www.instagram.com/@akademiaskateboardingu"
+            />
+            <SocialIcon
+              bgColor="#FFFFFF"
+              className="scale-75"
+              url="https://www.tiktok.com/@akademiaskateboardingu"
             />
           </div>
         </div>

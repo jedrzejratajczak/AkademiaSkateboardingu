@@ -11,6 +11,9 @@ const Home = () => (
         src={HomeBackground}
         alt="Kickflip"
       />
+      <p className="text-white absolute bottom-36 w-full text-center md:text-right text-xl md:text-3xl lg:text-4xl md:right-10">
+        WROCŁAWSKA SZKOŁA DESKOROLKI!
+      </p>
       <p className="text-white absolute bottom-5 w-full text-center md:text-right text-xl md:text-3xl lg:text-4xl md:right-10">
         POSTAW PIERWSZE KROKI Z NAMI!
       </p>
