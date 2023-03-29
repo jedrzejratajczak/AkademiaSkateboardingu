@@ -23,7 +23,7 @@ const Navbar = () => {
         </Link>
         <div className="hidden lg:flex gap-16 items-center justify-center">
           <NavLink to="/">HOME</NavLink>
-          <NavLink to="/zapisy">ZAPISY</NavLink>
+          {/* <NavLink to="/zapisy">ZAPISY</NavLink> */}
           <NavLink to="/cennik">CENNIK</NavLink>
           <NavLink to="/o_nas">O NAS</NavLink>
           <NavLink to="/mapa">MAPA</NavLink>
@@ -38,6 +38,10 @@ const Navbar = () => {
             bgColor="#E8424E"
             className="scale-75"
             url="https://www.instagram.com/akademiaskateboardingu"
+          />
+          <SocialIcon
+            className="scale-75"
+            url="https://www.tiktok.com/akademiaskateboardingu"
           />
         </div>
         <div className="relaive lg:hidden z-50">
@@ -70,9 +74,9 @@ const Navbar = () => {
           <NavLink onClick={toggleMobileMenu} white to="/">
             HOME
           </NavLink>
-          <NavLink onClick={toggleMobileMenu} white to="/zapisy">
+          {/* <NavLink onClick={toggleMobileMenu} white to="/zapisy">
             ZAPISY
-          </NavLink>
+          </NavLink> */}
           <NavLink onClick={toggleMobileMenu} white to="/cennik">
             CENNIK
           </NavLink>
