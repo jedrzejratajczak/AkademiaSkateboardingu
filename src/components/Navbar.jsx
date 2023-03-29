@@ -90,7 +90,7 @@ const Navbar = () => {
             <SocialIcon
               bgColor="#E8424E"
               className="scale-75"
-              url="https://www.instagram.com/@akademiaskateboardingu"
+              url="https://www.instagram.com/akademiaskateboardingu"
             />
             <SocialIcon
               bgColor="#FFFFFF"

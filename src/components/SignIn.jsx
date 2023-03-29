@@ -39,7 +39,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center gap-10 text-center">
+    <div className="flex flex-col items-center justify-center gap-10 text-center py-12">
       <p className="text-2xl uppercase">Zapisz się na zajęcia</p>
       <form
         className="flex flex-col gap-4 p-2 uppercase md:grid md:grid-cols-2 md:gap-x-6"
