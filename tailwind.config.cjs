@@ -8,6 +8,9 @@ module.exports = {
       },
       colors: {
         accent: '#FBE000'
+      },
+      spacing: {
+        10.5: '2.625rem'
       }
     }
   },

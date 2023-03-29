@@ -15,7 +15,7 @@ const Contact = () => (
     <div className="bg-white shadow p-8 md:p-16 rounded">
       <p className="text-xl md:text-3xl mb-5">DANE FIRMY</p>
       <p className="flex flex-col uppercase text-base md:text-xl text-gray-600">
-        <span>NIP 6991968199, Lubuska 58,</span>
+        <span>NIP 6991968199, Wrocław, Lubuska 58,</span>
         <span>Akademia Skateboardingu Adam Szulc,</span>
         <span>nr konta 14 1140 2004 0000 3702 8197 5955</span>
       </p>
