@@ -41,7 +41,7 @@ const Navbar = () => {
           />
           <SocialIcon
             className="scale-75"
-            url="https://www.tiktok.com/akademiaskateboardingu"
+            url="https://www.tiktok.com/@akademiaskateboardingu"
           />
         </div>
         <div className="relaive lg:hidden z-50">
@@ -94,7 +94,7 @@ const Navbar = () => {
             <SocialIcon
               bgColor="#E8424E"
               className="scale-75"
-              url="https://www.instagram.com/akademiaskateboardingu"
+              url="https://www.instagram.com/@akademiaskateboardingu"
             />
           </div>
         </div>
