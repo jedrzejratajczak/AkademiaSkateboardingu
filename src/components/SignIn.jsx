@@ -1,31 +1,41 @@
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
-const Input = ({ label, id, type, register, className }) => {
-  return (
-    <div className={`flex flex-col gap-2 ${className}`}>
-      <label htmlFor={id}>{label}</label>
-      <input
-        className="uppercase border rounded p-2"
-        id={id}
-        type={type}
-        {...register(id)}
-      />
-    </div>
-  );
-};
+const Input = ({ label, id, type, register, className, required }) => (
+  <div className={`flex flex-col gap-2 ${className}`}>
+    <label htmlFor={id}>{label}</label>
+    <input
+      required={required}
+      className="uppercase border rounded p-2"
+      id={id}
+      type={type}
+      {...register(id)}
+    />
+  </div>
+);
 
 const SignIn = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
+
   const onSubmit = async data => {
-    console.log(data);
+    try {
+      await axios.post(
+        `${import.meta.env.VITE_BASE_URL}/.netlify/functions/email-api`,
+        data
+      );
 
-    const res = await axios.post(
-      `${import.meta.env.VITE_BASE_URL}/.netlify/functions/email-api`,
-      data
-    );
+      reset();
 
-    console.log(res);
+      toast.success(
+        'Wiadomość wysłana poprawnie. Skontaktujemy się z Tobą mailowo lub telefonicznie.'
+      );
+    } catch (error) {
+      console.log(error);
+      toast.error(
+        'Wysyłanie wiadomości nie powiodło się. Spróbuj ponownie za kilka minut.'
+      );
+    }
   };
 
   return (
@@ -51,7 +61,7 @@ const SignIn = () => {
         />
         <Input
           label="E-mail"
-          id="childName"
+          id="email"
           type="text"
           register={register}
           required
@@ -66,7 +76,7 @@ const SignIn = () => {
         <Input
           label="Wiek dziecka"
           id="age"
-          type="phone"
+          type="number"
           register={register}
           required
         />
@@ -79,13 +89,13 @@ const SignIn = () => {
             required
           >
             <option value="">WYBIERZ ZAJĘCIA</option>
-            <option value="sr16">GRUPA ŚRODA 16:00</option>
-            <option value="sr16">GRUPA WTOREK 18:00</option>
-            <option value="sr16">INDYWIDUALNE (DO USTALENIA)</option>
+            <option>GRUPA ŚRODA 16:00</option>
+            <option>GRUPA WTOREK 18:00</option>
+            <option>INDYWIDUALNE (DO USTALENIA)</option>
           </select>
         </div>
         <input
-          className="p-2 border rounded bg-accent md:col-span-2"
+          className="p-2 border rounded bg-accent md:col-span-2 cursor-pointer"
           type="submit"
           value="wyslij"
         />

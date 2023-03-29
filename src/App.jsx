@@ -6,6 +6,8 @@ import Map from './components/Map';
 import About from './components/About';
 import Costs from './components/Costs';
 import SignIn from './components/SignIn';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
@@ -19,6 +21,7 @@ const App = () => {
         <Route path="/mapa" element={<Map />} />
       </Routes>
       <Footer />
+      <ToastContainer />
     </div>
   );
 };

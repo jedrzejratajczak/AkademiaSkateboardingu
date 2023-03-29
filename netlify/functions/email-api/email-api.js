@@ -27,7 +27,6 @@ const handler = async (event, _context) => {
               <p>Email: ${data.email}</p>
               <p>Telefon: ${data.phone}</p>
               <p>Wiek dziecka: ${data.age}</p>
-              <p>Forma zajęć: ${data.classType}</p>
               <p>Dzień i godzina: ${data.time}</p>
             </body>
           </html>`
