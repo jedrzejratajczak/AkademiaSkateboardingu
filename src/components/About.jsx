@@ -19,9 +19,8 @@ const About = () => (
       />
       <div className="text-sm md:text-base lg:text-xl flex flex-col gap-5 uppercase">
         <p>
-          Cześć, nazywam się Adam i od 13 lat jeżdżę na deskorolce, która z
-          czasem z prostej zajawki zmieniła się w nieodłączną część mojego
-          życia.
+          Cześć, jestem Adam i od 13 lat jeżdżę na deskorolce, która z czasem z
+          prostej zajawki zmieniła się w nieodłączną część mojego życia.
         </p>
         <p>
           Poza czystą przyjemnością z jazdy, pozwoliła mi ona zmienić sposób
