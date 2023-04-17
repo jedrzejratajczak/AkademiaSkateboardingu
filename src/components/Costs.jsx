@@ -11,8 +11,8 @@ const Costs = () => (
         <p className="underline">2-GODZINNE 100 ZŁ</p>
         <p className="text-4xl mt-5">ZAJĘCIA INDYWIDUALNE</p>
         <p className="underline">1-GODZINNE 100 ZŁ</p>
-        <p className="text-4xl mt-5">WYPOŻYCZENIE SPRZĘTU</p>
-        <p className="underline">10 ZŁ</p>
+        <p className="text-4xl mt-5">DOSTĘPNY SPRZĘT</p>
+        <p className="underline">KASK, DESKA, OCHRANIACZE</p>
       </div>
       <img
         className="h-[600px] w-screen object-cover"
