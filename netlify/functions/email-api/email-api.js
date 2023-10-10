@@ -9,6 +9,10 @@ const handler = async (event, _context) => {
       'https://api.sendinblue.com/v3/smtp/email',
       {
         sender: {
+          email: 'akademiaskateboardingu@gmail.com',
+          name: 'Formularz Zapisowy'
+        },
+        replyTo: {
           name: data.name,
           email: data.email
         },
