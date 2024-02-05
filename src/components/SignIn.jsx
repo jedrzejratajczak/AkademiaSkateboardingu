@@ -89,9 +89,8 @@ const SignIn = () => {
             required
           >
             <option value="">WYBIERZ ZAJĘCIA</option>
-            <option>WTOREK 15:00-19:00 WYCIECZKA SKATEPARK W BRZEGU</option>
-            <option>PIĄTEK 15:00-19:00 WYCIECZKA SKATEPARK W BRZEGU</option>
-            <option>INDYWIDUALNE (DO USTALENIA)</option>
+            <option>INDYWIDUALNE</option>
+            <option>GRUPOWE - START WIOSNA</option>
           </select>
         </div>
         <input
